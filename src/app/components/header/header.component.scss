@@ -54,6 +54,10 @@
       &--qr:hover ::ng-deep app-qr-code .qr {
         display: block;
       }
+
+      &--notify:hover ::ng-deep app-notify .notify {
+        display: block;
+      }
     }
 
     &-icon-link {

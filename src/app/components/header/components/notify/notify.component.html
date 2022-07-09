@@ -1,0 +1,20 @@
+<div class="notify">
+  <header class="notify__header">
+    <h3>Thông báo mới nhận</h3>
+  </header>
+  <ul class="notify__list">
+    <li *ngFor="let item of notifyItems" class="notify__item" [class.notify__item--new]="item.isNew">
+      <a href="#" class="notify__link">
+        <img [src]="item.image" alt="Sản phẩm" class="notify__img">
+        <div class="notify__info">
+          <span class="notify__name">{{ item.name }}</span>
+          <span class="notify__description">{{ item.description }}</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <footer class="notify__footer">
+    <a href="#" class="notify__footer-view-all">Xem tất cả</a>
+  </footer>
+</div>
