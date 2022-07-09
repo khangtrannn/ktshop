@@ -1,7 +1,7 @@
 .notify {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 125%;
   right: 0;
   width: 404px;
   background-color: var(--white-color);
@@ -9,6 +9,26 @@
   cursor: default;
   transform-origin: calc(100% - 20px) top;
   animation: headerNotifyGrowth ease-in 250ms;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    border-color: transparent transparent var(--white-color) transparent;
+    border-style: solid;
+    border-width: 0px 29px 20px 29px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -16px;
+    width: 90px;
+    height: 20px;
+  }
 
   &__header {
     height: 40px;
