@@ -1,0 +1,45 @@
+.qr {
+  width: 185px;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 118%; /* 118% of contain element */
+  left: 0;
+  padding: 8px;
+  border-radius: 2px;
+  display: none;
+  animation: fadeIn ease-in 0.3s;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    height: 20px;
+  }
+
+  &-img {
+    width: 100%;
+  }
+
+  .apps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-link {
+    &:first-child {
+      margin-left: 8px;
+    }
+
+    &:last-child {
+      margin-right: 8px;
+    }
+  }
+
+  &-download-img {
+    height: 16px;
+  }
+}
+
