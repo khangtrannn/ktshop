@@ -1,0 +1,50 @@
+<div class="search">
+  <div class="search__logo">
+    <img class="search__logo-img" src="/assets/icons/logo.svg" alt="Logo">
+  </div>
+
+  <div class="search__bar">
+    <div class="search__bar-input-wrapper">
+      <input type="text" class="search__bar-input" placeholder="Tìm kiếm sản phẩm">
+      <div class="search__bar-history">
+        <div class="search__bar-history-heading">Lịch sử tìm kiếm</div>
+        <ul class="search__bar-history-list">
+          <li class="search__bar-history-item">
+            <a href="#">Apple Watch Series 7</a>
+          </li>
+          <li class="search__bar-history-item">
+            <a href="#">Macbook Pro M1</a>
+          </li>
+          <li class="search__bar-history-item">
+            <a href="#">Iphone 13 Pro Max</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="search__bar-selection">
+      <span class="search__bar-selection-label">Trong shop</span>
+      <i class="search__bar-selection-icon fa-solid fa-angle-down"></i>
+
+      <ul class="search__bar-selection-option">
+        <li class="search__bar-selection-item search__bar-selection-item--active">
+          <span>Trong shop</span>
+          <i class="fa-solid fa-check"></i>
+        </li>
+        <li class="search__bar-selection-item">
+          <span>Ngoài shop</span>
+          <i class="fa-solid fa-check"></i>
+        </li>
+      </ul>
+    </div>
+    <button class="search__bar-btn">
+      <i class="search__bar-btn-icon fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+
+  <div class="search__cart">
+    <div class="search__cart-wrapper">
+      <i class="search__cart-icon fa-solid fa-cart-shopping"></i>
+      <app-cart-list></app-cart-list>
+    </div>
+  </div>
+</div>

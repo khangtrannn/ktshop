@@ -8,7 +8,9 @@
   border: 1px solid #d3d3d3;
   cursor: default;
   transform-origin: calc(100% - 20px) top;
-  animation: headerNotifyGrowth ease-in 250ms;
+  animation: growth ease-in 250ms;
+  will-change: opacity, transform; // optimize animation
+  z-index: 1;
 
   &::before {
     content: "";
@@ -99,18 +101,6 @@
       text-align: center;
       font-weight: 400;
     }
-  }
-}
-
-@keyframes headerNotifyGrowth {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
   }
 }
 

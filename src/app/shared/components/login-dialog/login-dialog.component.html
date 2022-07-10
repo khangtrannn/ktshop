@@ -1,0 +1,45 @@
+<div class="form">
+  <div class="form__container">
+    <div class="form__header">
+      <h3 class="form__heading">Đăng nhập</h3>
+      <span (click)="openRegisterDialog()" class="form__switch-btn">Đăng ký</span>
+    </div>
+
+    <div class="form__form">
+      <div class="form__group">
+        <input type="text" class="form__input" placeholder="Số điện thoại">
+      </div>
+      <div class="form__group">
+        <input type="password" class="form__input" placeholder="Mật khẩu">
+      </div>
+    </div>
+
+    <div class="form__policy">
+      <div class="form__help">
+        <a href="#" class="form__help-link form__help-forgot">Quên mật khẩu</a>
+        <span class="form__help-separate"></span>
+        <a href="#" class="form__help-link">Cần trợ giúp?</a>
+      </div>
+    </div>
+
+    <div class="form__controls">
+      <button (click)="onClose()" class="btn btn--normal form__controls-back">TRỞ LẠI</button>
+      <button (click)="openRegisterDialog()" class="btn btn--primary">ĐĂNG NHẬP</button>
+    </div>
+  </div>
+
+  <div class="form__socials">
+    <a href="#" class="btn btn--size-s btn--with-icon form__socials--facebook">
+      <i class="fa-brands fa-facebook-square form__socials-icon"></i>
+      <span class="form__socials-title">
+        Kết nối với Facebook
+      </span>
+    </a>
+    <a href="#" class="btn btn--size-s btn--with-icon form__socials--google">
+      <i class="fa-brands fa-google form__socials-icon"></i>
+      <span class="form__socials-title">
+        Kết nối với Google
+      </span>
+    </a>
+  </div>
+</div>

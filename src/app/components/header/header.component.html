@@ -40,10 +40,12 @@
           </a>
         </li>
 
-        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+        <li (click)="onRegisterClick()" class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
 
-        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+        <li (click)="onLoginClick()" class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
       </ul>
     </div>
+
+    <app-search></app-search>
   </div>
 </header>
